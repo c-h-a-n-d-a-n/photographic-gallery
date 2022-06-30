@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(120deg,rgba(103,58,183,0.5)rgba(103,58,183,0.5)),url(photo1/100.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.abc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.abc .def {
+    width: 50%;
+    padding-bottom: 50px;
+}
+.abc .def h4{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+.abc .def h4 span{
+    font-weight: 100;
+}
+
+.abc .ghi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.abc .ghi .photo{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.abc .ghi .photo img{
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    /* padding: 5px; */
+    
+    border-radius: 5px;
+}
+.abc .ghi .photo img:hover{
+    
+    transform: scale(1.05);
+}
+
+.abc .btn{
+    margin: 40px 0 70px 0;
+    background: #222;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.abc .btn a{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width: 769px){
+    .abc .ghi{
+        flex-direction: column;
+    }
+    .abc .ghi .photo{
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 643px){
+    .abc .ghi{
+        flex-direction: column;
+    }
+    .abc .ghi .photo{
+        width: 100px;
+    }
+}
